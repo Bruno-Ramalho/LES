@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Product from "../components/products/Product";
 import Rating from "../components/ratings/Rating";
 import data from "../data";
 
