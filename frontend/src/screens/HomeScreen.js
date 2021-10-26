@@ -11,20 +11,20 @@ export default function HomeScreen() {
     const { loading, error, products } = productList;
 
     useEffect(() => {
-        dispatch(listProducts())
-    }, []);
+        dispatch(listProducts());
+    }, [dispatch]);
     return (
-        <div> {
-            loading ? <LoadingBox /> : error ? <MessageBox variant="danger">
-                {error}</MessageBox> : <div className="row center">
-                {
-                    products.map((product) => (
-                        <Product key={
-                            product._id
-                        }
-                            product={product}></Product>
-                    ))
-                } </div>
-        } </div>
-    )
+        <div>
+            {loading ? (
+                <LoadingBox></LoadingBox>
+            ) : error ? (<MessageBox variant="danger">{error}</MessageBox>
+            ) : (
+                <div className="row center">
+                    {products.map((product) => (
+                        <Product key={product._id} product={product}></Product>
+                    ))}
+                </div>
+            )}
+        </div>
+    );
 }
