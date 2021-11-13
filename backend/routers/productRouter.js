@@ -9,18 +9,18 @@ productRouter.get('/', expressAsyncHandler(async (req, res) => {
     res.send(products);
 }));
 
-
 productRouter.get('/seed', expressAsyncHandler(async (req, res) => { // await Product.remove({});
     const ceratedProducts = await Product.insertMany(data.products);
-    res.send({ceratedProducts});
+    res.send({ ceratedProducts });
 }));
 
-productRouter.get('/id', expressAsyncHandler(async (req, res) => {
+productRouter.get('/:id', expressAsyncHandler(async (req, res) => {
     const product = await Product.findById(req.params.id);
     if (product) {
         res.send(product);
     } else {
-        res.status(404).send({message: 'Produto não encontrado'});
+        res.status(404).send({ message: 'Produto não encontrado' });
     }
 }));
+
 export default productRouter;
