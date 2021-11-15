@@ -1,0 +1,55 @@
+Arguments: 
+  C:\dev\node\node.exe C:\Users\osmar\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js init
+
+PATH: 
+  C:\Users\osmar\bin;C:\dev\git\Git\mingw64\bin;C:\dev\git\Git\usr\local\bin;C:\dev\git\Git\usr\bin;C:\dev\git\Git\usr\bin;C:\dev\git\Git\mingw64\bin;C:\dev\git\Git\usr\bin;C:\Users\osmar\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\dev\Java\jdk-11.0.12\bin;C:\dev\maven\apache-maven-3.8.3\bin;C:\dev\node;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\osmar\AppData\Local\Microsoft\WindowsApps;C:\dev\vscode\Microsoft VS Code\bin;C:\Users\osmar\AppData\Roaming\npm;C:\dev\git\Git\usr\bin\vendor_perl;C:\dev\git\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: Can't answer a question unless a user TTY
+      at ConsoleReporter.question (C:\Users\osmar\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:96935:59)
+      at Object.<anonymous> (C:\Users\osmar\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:89125:38)
+      at Generator.next (<anonymous>)
+      at step (C:\Users\osmar\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\osmar\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+npm manifest: 
+  {
+    "name": "projeto-les",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "back end projeto LES",
+    "main": "index.js",
+    "scripts": {
+      "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+    },
+    "author": "Bruno-Ramalho <bruno_jaelson@hotmail.com>",
+    "license": "ISC",
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "dotenv": "^10.0.0",
+      "express": "^4.17.1",
+      "express-async-handler": "^1.2.0",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^6.0.12"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.13"
+    },
+    "repository": "https://github.com/Bruno-Ramalho/LES.git"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

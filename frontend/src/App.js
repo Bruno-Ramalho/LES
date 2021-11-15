@@ -29,7 +29,7 @@ function App() {
                     </div>
                     <div>
                         <Link to="/cart">
-                            Cart
+                            Carrrinho
                             {cartItems.length > 0 && (
                                 <span className="badge">{cartItems.length}</span>
                             )}
@@ -46,7 +46,7 @@ function App() {
                                 </ul>
                             </div>
                         ) : (
-                            <Link to="/signin">Sign In</Link>
+                            <Link to="/signin">Login</Link>
                         )}
                     </div>
                 </header>
@@ -56,7 +56,7 @@ function App() {
                     <Route path="/signin" component={SigninScreen}></Route>
                     <Route path="/" component={HomeScreen} exact></Route>
                 </main>
-                <footer className="row center">Todos direitos Reservados Cria Software</footer>
+                <footer className="row center">Cria Software<span>&reg;</span></footer>
             </div>
         </BrowserRouter>
     );
